@@ -18,13 +18,6 @@ client.on('ready', () => {
 
 
 
-client.on("message" , message => {
-	if(message.content === prefix + "help")
-	var helpembed = new Discord.RichEmbed()
-	.setTitle("RaidBot de XiL")
-	.setDescription("/raid pour raid les channels du discord \n /spam pour spammer les channels \n /delchannels pour supprimer tous les channels \n /delroles pour supprimer tous les roles \n / ")
-})
-
       client.on('message', message => {
         if (message.content === prefix + "raid"){
           message.delete()
