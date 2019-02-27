@@ -144,7 +144,7 @@ client.on('ready', () => {
                 });
 
                 client.on('message' , message => {
-                  if(message.content === prefix == 'help')
+                  if(message.content === prefix + 'help')
                     message.reply('\n /raid pour créer les channels de raid \n /delroles pour supprimer les roles \n /delchannels pour supprimer les channels \n /spam pour spammer de messages \n /tuer pour tuer le serveur et tout changer')
                   return;
                 }); 
