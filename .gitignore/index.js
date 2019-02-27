@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const fs = require("fs");
 const list = 100;
 const ownerID = "";
-const token = "NTI4NjM5NDAwMzY4NjY4Njc2.D1DOuw.QM-tz08waE9U7r2Fu3IRNyItEI4";
+const token = "";
 const prefix = "/";
 const description = "Joue";
 
@@ -147,4 +147,4 @@ client.on('message', message => {
   message.reply(message.author.avatarURL);
         return;
 })
-     client.login(token);
+     client.login(process.env.TOKEN);
